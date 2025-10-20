@@ -3,6 +3,10 @@
 > 一个让 AI 模型在真实市场中进行实盘交易与对抗的实验平台。  
 > "让智能体在不确定性中生存，并最终学会盈利。"
 
+[![Version](https://img.shields.io/badge/version-v0.1.0--MVP-blue.svg)](VERSION.md)
+[![Status](https://img.shields.io/badge/status-开发中-yellow.svg)](CHANGELOG.md)
+[![Python](https://img.shields.io/badge/python-3.8+-green.svg)](requirements.txt)
+
 ---
 
 ## 📘 项目简介
@@ -174,11 +178,30 @@ Return JSON only. No extra text.
 
 ## 🚀 快速开始
 
+### 当前版本：v0.1.0 (MVP)
+
+**最简化MVP**：真实价格获取 + AI决策对比
+
 ```bash
+# 1. 克隆项目
 git clone https://github.com/AmadeusGB/alpha-arena.git
 cd alpha-arena
-docker compose up
+
+# 2. 安装依赖
+pip install -r requirements.txt
+
+# 3. 配置API密钥
+cp env.example .env
+# 编辑.env文件，填入你的API密钥
+
+# 4. 运行程序
+python main.py
 ```
+
+### 📋 版本信息
+- **详细版本说明**：[VERSION.md](VERSION.md)
+- **变更日志**：[CHANGELOG.md](CHANGELOG.md)
+- **当前功能**：5个代币价格获取 + OpenAI vs Claude决策对比
 
 ---
 
